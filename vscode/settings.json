@@ -1,0 +1,44 @@
+{
+    "workbench.iconTheme": "vscode-icons",
+    "files.associations": {
+        "*.rmd": "markdown"
+    },
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "explorer.confirmDragAndDrop": false,
+    "python.jediEnabled": false,
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "git.enableSmartCommit": true,
+    "vim.handleKeys": {
+        "<C-r>": false,
+        "<C-f>": false,
+        "<C-w>": false,
+        "<C-k>": false,
+        "<C-c>": false
+    },
+    "window.menuBarVisibility": "default",
+    "mssql.connections": [
+        {
+            "server": "localhost,1433",
+            "database": "",
+            "authenticationType": "SqlLogin",
+            "user": "SA",
+            "password": "",
+            "emptyPasswordInput": false,
+            "savePassword": true,
+            "profileName": "docker"
+        }
+    ],
+    "todo-tree.tree.showScanModeButton": false,
+    "java.home": "/usr/lib/jvm/default",
+    "java.configuration.checkProjectSettingsExclusions": false,
+    "explorer.confirmDelete": false,
+    "java.semanticHighlighting.enabled": true,
+    "remote.extensionKind": {
+        "ms-azuretools.vscode-docker": "workspace"
+    },
+    "editor.fontFamily": "'Hack', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "python.languageServer": "Microsoft",
+    "sqltools.useNodeRuntime": true
+}
