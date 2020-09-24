@@ -32,11 +32,20 @@ alias fgrep='fgrep --color=auto'
 alias diff='diff --color=auto'
 
 # aliases
-alias vim=nvim
+#alias vim=nvim
 alias 'xclip-c'='xclip -selection clipboard'
 
 # Syntax highlighting (must be last)
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# Colored less (man)
+export LESS_TERMCAP_mb=$'\e[1;32m'
+export LESS_TERMCAP_md=$'\e[1;32m'
+export LESS_TERMCAP_me=$'\e[0m'
+export LESS_TERMCAP_se=$'\e[0m'
+export LESS_TERMCAP_so=$'\e[01;33m'
+export LESS_TERMCAP_ue=$'\e[0m'
+export LESS_TERMCAP_us=$'\e[1;4;31m'
 
 # End of lines added by Josh Wright and eof probably
 
