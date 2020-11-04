@@ -1,5 +1,4 @@
 {
-    "workbench.iconTheme": "vscode-icons",
     "files.associations": {
         "*.rmd": "markdown"
     },
@@ -40,5 +39,9 @@
     },
     "editor.fontFamily": "'Hack', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
     "python.languageServer": "Microsoft",
-    "sqltools.useNodeRuntime": true
+    "sqltools.useNodeRuntime": true,
+    "window.titleBarStyle": "custom",
+    "workbench.iconTheme": "material-icon-theme",
+    "latex-workshop.view.pdf.viewer": "tab",
+    "window.zoomLevel": 0
 }
