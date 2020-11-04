@@ -22,7 +22,8 @@ compinit
 # Enable colors
 autoload -U colors && colors
 
-PROMPT="%F{8}[%f%F{10}%n@%m%f %F{11}%~%f%F{8}]%f"$'\n'"%# "
+HOSTCOLOR=10
+PROMPT="%F{8}[%f%F{10}%n@%f%F{$HOSTCOLOR}%m%f %F{11}%~%f%F{8}]%f"$'\n'"%# "
 
 # colors
 alias ls='exa'
