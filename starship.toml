@@ -1,0 +1,10 @@
+[directory]
+style = "bold yellow"
+
+[hostname]
+style = "bold dimmed cyan"
+
+[username]
+style_user = "bold green"
+show_always = true
+

@@ -36,6 +36,9 @@ alias diff='diff --color=auto'
 #alias vim=nvim
 alias 'xclip-c'='xclip -selection clipboard'
 
+# Starship
+eval "$(starship init zsh)"
+
 # Syntax highlighting (must be last)
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 

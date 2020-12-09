@@ -28,3 +28,6 @@ This includes `.zshrc` and `.zshenv`.
 ### vscode
 - `settings.json` -> `~/.config/Code/User/settings.json`.
 
+### starship
+- `starship.toml` -> `~/.config/starship.toml`
+
