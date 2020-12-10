@@ -3,6 +3,9 @@ add_newline = false
 [directory]
 style = "bold yellow"
 
+[gcloud]
+disabled = true
+
 [hostname]
 style = "bold dimmed cyan"
 
