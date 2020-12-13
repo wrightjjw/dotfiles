@@ -20,6 +20,9 @@ You'll have to manually install them.
 
 ## Programs
 
+### alacritty
+- alacritty.yml -> ~/.config/alacritty/alacritty.yml
+
 ### zsh
 Everthing in the zsh folder should link straight to home.
 These are hidden files (actual dotfiles).
