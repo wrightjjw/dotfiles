@@ -23,6 +23,9 @@ You'll have to manually install them.
 ### alacritty
 - alacritty.yml -> ~/.config/alacritty/alacritty.yml
 
+### dunst
+- `dunstrc` -> `~/.config/dunst/dunstrc`
+
 ### vim
 - `vimrc` -> `~/.vimrc`
 
