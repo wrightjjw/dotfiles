@@ -1,0 +1,8 @@
+unlet! skip_defaults_vim
+source $VIMRUNTIME/defaults.vim
+
+set rnu
+set nu
+
+au BufWritePost *.ms silent execute "!groff -ms % -Tpdf > %.pdf" | redraw!
+
