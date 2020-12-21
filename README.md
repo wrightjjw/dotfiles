@@ -17,6 +17,14 @@ You'll have to manually install them.
 - zsh config uses the zsh syntax highlighting plugin.
 - GUI monospace font is Hack. (used in vscode)
 
+## Installation script
+The provided installation script `install.sh`
+will create symoblic links to the files in your local repo
+in thier proper locations.
+This is currently the only defined behavior,
+though other options will likely be implemented.
+**The script should be run in the cloned directory!!**
+
 
 ## Programs
 
