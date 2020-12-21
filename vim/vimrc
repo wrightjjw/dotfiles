@@ -4,5 +4,7 @@ source $VIMRUNTIME/defaults.vim
 set rnu
 set nu
 
+set tabstop=4
+
 au BufWritePost *.ms silent execute "!groff -ms % -Tpdf > %.pdf" | redraw!
 
