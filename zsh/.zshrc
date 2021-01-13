@@ -20,7 +20,7 @@ compinit
 # Lines added by me, Josh Wright
 
 # PATH
-export PATH=$PATH:~/go/bin:~/.cargo/bin
+export PATH=$PATH:~/go/bin:~/.cargo/bin:~/.local/bin
 
 # Enable colors
 autoload -U colors && colors
