@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Count number of updates reported from yay.
+# This does NOT poll the servers,
+# it just checks the local database.
+# 'yay -Sy' should be run periodically by cron to update this indicator.
+
+count=$(yay -Qu | wc -l)
+if [[ $count == 0 ]]
+then
+	echo ""
+else
+	echo 📦$count
+fi
+

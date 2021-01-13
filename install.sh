@@ -24,3 +24,10 @@ ln -s $REPO/zsh/.zshenv ~/.zshenv
 # starship
 ln -s $REPO/starship.toml ~/.config/starship.toml
 
+# scripts
+mkdir -p ~/.local/bin
+for s in $(ls $REPO/scripts)
+do
+	ln -s $REPO/scripts/$s ~/.local/bin/$s
+done
+

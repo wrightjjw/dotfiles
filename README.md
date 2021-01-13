@@ -51,3 +51,8 @@ This includes `.zshrc` and `.zshenv`.
 ### starship
 - `starship.toml` -> `~/.config/starship.toml`
 
+## Scripts
+There is a scripts folder containing some scripts used by the wm and status bar.
+I keep these in `~/.local/bin`, which is included in `PATH` by `.zshrc`.
+The installation script will place these scripts there.
+
