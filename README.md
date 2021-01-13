@@ -34,6 +34,9 @@ though other options will likely be implemented.
 ### dunst
 - `dunstrc` -> `~/.config/dunst/dunstrc`
 
+### polybar
+- `config` -> ~/.config/polybar/config
+
 ### vim
 - `vimrc` -> `~/.vimrc`
 
