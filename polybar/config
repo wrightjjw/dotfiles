@@ -1,0 +1,80 @@
+[fonts]
+font-0 = Cascadia Mono PL:size=10
+font-1 = Noto Color Emoji:scale=10
+padding = 1
+line-size = 2
+
+[colors]
+green = #00de1e
+blue = #004ade
+red = #de0000
+yellow = #eaff00
+
+[bar/laptop]
+font-0 = ${fonts.font-0}
+font-1 = ${fonts.font-1}
+line-size = ${fonts.line-size}
+background = #000
+foreground = #fff
+module-margin = 1
+
+radius = 0.5
+
+tray-position = right
+tray-detached = false
+
+modules-left = workspaces title
+modules-right = volume battery clock
+
+[module/workspaces]
+type = internal/xworkspaces
+
+label-active-underline = ${colors.green}
+label-active-padding = ${fonts.padding}
+
+label-occupied-underline = ${colors.blue}
+label-occupied-padding = ${fonts.padding}
+
+label-urgent-foreground = ${colors.red}
+label-urgent-padding = ${fonts.padding}
+
+label-empty-padding = ${fonts.padding}
+
+
+[module/title]
+type = internal/xwindow
+
+[module/volume]
+type = internal/pulseaudio
+use-ui-max = false
+
+format-volume = <label-volume>
+label-volume = 🔉 %percentage%%
+label-volume-underline = ${colors.blue}
+
+label-muted = 🔇 %percentage%%
+label-muted-underline = ${colors.red}
+
+[module/battery]
+type = internal/battery
+full-at = 99
+
+label-full = ⚡%percentage%%
+label-full-underline = ${colors.blue}
+label-charging = 🔌%percentage%%
+label-charging-underline = ${colors.yellow}
+label-discharging = 🔋%percentage%%
+label-discharging-underline = ${colors.green}
+
+battery = BAT1
+adapter = ACAD
+
+
+[module/clock]
+type = internal/date
+date = %a %b %d %Y
+time = %I:%M:%S %P %Z
+
+label = %date% %time%
+
+
