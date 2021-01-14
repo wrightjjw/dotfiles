@@ -54,7 +54,13 @@ tray-position = right
 tray-detached = false
 
 modules-left = workspaces title
-modules-right = volume battery clock
+modules-right = volume battery yay clock
+
+[module/yay]
+type = custom/script
+exec = sb-yay-updates
+
+format-underline = ${colors.yellow}
 
 [module/workspaces]
 type = internal/xworkspaces
