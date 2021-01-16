@@ -19,6 +19,7 @@ line-size = ${fonts.line-size}
 background = ${colors.bg}
 foreground = ${colors.fg}
 module-margin = 1
+monitor = DP-1
 
 tray-position = right
 tray-detached = false
@@ -33,9 +34,7 @@ line-size = ${fonts.line-size}
 background = ${colors.bg}
 foreground = ${colors.fg}
 module-margin = 1
-
-tray-position = right
-tray-detached = false
+monitor = DP-3
 
 modules-left = workspaces title
 modules-right = clock
@@ -64,6 +63,7 @@ format-underline = ${colors.yellow}
 
 [module/workspaces]
 type = internal/xworkspaces
+pin-workspaces = false
 
 label-active-underline = ${colors.green}
 label-active-padding = ${fonts.padding}
