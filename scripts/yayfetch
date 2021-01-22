@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# Fetches updates via yay -Sy, but does not install them.
+# Checks every 6 seconds for a minute.
+
+count=0
+
+until yay -Sy > /dev/null 2>&1
+do
+	echo "check $count ($?)"
+	sleep 6s
+	count=$(expr $count + 1)
+	if [[ $count -ge 10 ]]
+	then
+		>&2 echo "yayfetch: failed to fetch updates"
+		exit 1
+	fi
+done
+
