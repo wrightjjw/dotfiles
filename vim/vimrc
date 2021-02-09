@@ -6,5 +6,10 @@ set nu
 
 set tabstop=4
 
+function! CountWords()
+	set laststatus=2
+	set statusline=%{wordcount().words}\ words
+endfunction
+
 au BufWritePost *.ms silent execute "!groff -ms % -Tpdf > %.pdf" | redraw!
 

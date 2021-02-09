@@ -5,7 +5,7 @@
 # it just checks the local database.
 # 'yay -Sy' should be run periodically by cron to update this indicator.
 
-count=$(yay -Qu | wc -l)
+count=$(yay -Qu 2> /dev/null| wc -l)
 if [[ $count == 0 ]]
 then
 	echo ""

@@ -1,0 +1,9 @@
+#!/bin/sh
+
+killall picom
+killall polybar
+killall dunst
+killall nm-applet
+killall flameshot
+xsetroot -grey
+

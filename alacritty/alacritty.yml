@@ -147,7 +147,7 @@ font:
     #style: Bold Italic
 
   # Point size
-  size: 10.0
+  size: 7.0
 
   # Offset is the extra space around each character. `offset.y` can be thought
   # of as modifying the line spacing, and `offset.x` as modifying the letter
@@ -186,7 +186,7 @@ colors:
     green:   '0x4e9a06'
     yellow:  '0xc4a000'
     blue:    '0x0079e5'
-    magenta: '0x75507b'
+    magenta: '0xab30bf'
     cyan:    '0x06989a'
     white:   '0xd3d7cf'
 
@@ -197,7 +197,7 @@ colors:
     green:   '0x8ae234'
     yellow:  '0xfce94f'
     blue:    '0x419dff'
-    magenta: '0xad7fa8'
+    magenta: '0xd72ac4'
     cyan:    '0x34e2e2'
     white:   '0xeeeeec'
 
@@ -326,7 +326,7 @@ colors:
 #
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
-background_opacity: 0.85
+background_opacity: 0.80
 
 #selection:
   # This string contains all characters that are used as separators for
@@ -336,14 +336,14 @@ background_opacity: 0.85
   # When set to `true`, selected text will be copied to the primary clipboard.
   #save_to_clipboard: false
 
-#cursor:
+cursor:
   # Cursor style
   #
   # Values for `style`:
   #   - ▇ Block
   #   - _ Underline
   #   - | Beam
-  #style: Block
+  style: Block
 
   # Vi mode cursor style
   #
@@ -351,7 +351,7 @@ background_opacity: 0.85
   # the style of the active value of the normal cursor.
   #
   # See `cursor.style` for available options.
-  #vi_mode_style: None
+  vi_mode_style: Beam
 
   # If this is `true`, the cursor will be rendered as a hollow box when the
   # window is not focused.
