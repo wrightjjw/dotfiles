@@ -56,3 +56,6 @@ export LESS_TERMCAP_us=$'\e[1;4;31m'
 
 # End of lines added by Josh Wright and eof probably
 
+
+# added by travis gem
+[ ! -s /home/josh/.travis/travis.sh ] || source /home/josh/.travis/travis.sh
