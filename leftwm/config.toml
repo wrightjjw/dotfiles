@@ -22,9 +22,15 @@ key = "b"
 
 [[keybind]]
 command = "Execute"
-value = "$EDITOR"
+value = "code"
 modifier = ["modkey"]
 key = "e"
+
+[[keybind]]
+command = "Execute"
+value = "flameshot gui"
+modifier = []
+key = "Print"
 
 [[keybind]]
 command = "Execute"
@@ -93,7 +99,7 @@ key = "q"
 [[keybind]]
 command = "Execute"
 value = "slock"
-modifier = ["modkey", "Shift"]
+modifier = ["modkey", "Control"]
 key = "l"
 
 [[keybind]]
