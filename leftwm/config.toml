@@ -28,6 +28,12 @@ key = "e"
 
 [[keybind]]
 command = "Execute"
+value = "swap-audio -n"
+modifier = ["modkey", "Shift"]
+key = "a"
+
+[[keybind]]
+command = "Execute"
 value = "flameshot gui"
 modifier = []
 key = "Print"
