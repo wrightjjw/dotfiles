@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# It just cats ~/.cache/wttr
+cat ~/.cache/wttr
+

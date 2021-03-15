@@ -1,0 +1,8 @@
+#!/bin/sh
+
+# Script to grab current weather report from wttr.in and save it in user cache.
+# It can take a location as an argument.
+# ~/.cache/wttr is used by my weather statusbar indicator.
+
+curl "wttr.in/$1?format=%c%t&u" > ~/.cache/wttr
+

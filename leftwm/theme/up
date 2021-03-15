@@ -5,8 +5,7 @@ echo "LoadTheme $SCRIPTPATH/theme.toml" > $XDG_RUNTIME_DIR/leftwm/commands.pipe
 
 feh --randomize --bg-fill ~/repos/dotfiles/bg
 picom &
-polybar desktop1 &
-polybar desktop2 &
+polybar laptop &
 dunst &
 flameshot &
 nm-applet &

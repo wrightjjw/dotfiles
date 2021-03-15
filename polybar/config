@@ -53,7 +53,11 @@ tray-position = right
 tray-detached = false
 
 modules-left = workspaces title
-modules-right = volume battery yay clock
+modules-right = volume battery yay wttr clock
+
+[module/wttr]
+type = custom/script
+exec = sb-wttr
 
 [module/yay]
 type = custom/script
