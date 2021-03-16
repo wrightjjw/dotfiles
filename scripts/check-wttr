@@ -4,5 +4,10 @@
 # It can take a location as an argument.
 # ~/.cache/wttr is used by my weather statusbar indicator.
 
-curl "wttr.in/$1?format=%c%t&u" > ~/.cache/wttr
+if curl "wttr.in/$1?format=%c%t&u" -o ~/.cache/wttr
+then
+		:
+else
+		echo "" > ~/.cache/wttr
+fi
 
