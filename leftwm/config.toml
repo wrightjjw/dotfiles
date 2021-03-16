@@ -1,4 +1,4 @@
-oodkey = "Mod4"
+modkey = "Mod4"
 workspaces = []
 tags = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
 
@@ -25,6 +25,12 @@ command = "Execute"
 value = "code"
 modifier = ["modkey"]
 key = "e"
+
+[[keybind]]
+command = "Execute"
+value = "swap-audio -n"
+modifier = ["modkey", "Shift"]
+key = "a"
 
 [[keybind]]
 command = "Execute"
