@@ -1,5 +1,20 @@
 #!/bin/sh
 
-# It just cats ~/.cache/wttr
-cat ~/.cache/wttr
+# Cats a weather file (default ~/.cache/wttr),
+# if the file is younger than a specified time.
+# By default the expiration time is 4 hours (14400 seconds)
+
+# The wttr file
+FILE=~/.cache/wttr
+
+# Number of seconds since file becomes too old to display
+OLDTIME=14400
+
+# Get time diff
+TDIFF=$(expr $(date +%s) - $(stat $FILE -c %Y))
+
+if [ $TDIFF -lt $OLDTIME ]
+then
+	cat ~/.cache/wttr
+fi
 
