@@ -58,6 +58,7 @@ modules-right = volume battery yay wttr clock
 [module/wttr]
 type = custom/script
 exec = sb-wttr
+interval = 60
 
 [module/yay]
 type = custom/script
