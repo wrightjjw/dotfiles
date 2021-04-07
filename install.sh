@@ -1,6 +1,6 @@
 #!/bin/sh
 
-REPO=$(pwd)
+REPO=$(dirname $(readlink -f "$0"))
 
 # alacritty
 mkdir -p ~/.config/alacritty
