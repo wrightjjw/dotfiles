@@ -23,7 +23,6 @@ will create symoblic links to the files in your local repo
 in thier proper locations.
 This is currently the only defined behavior,
 though other options will likely be implemented.
-**The script should be run in the cloned directory!!**
 
 
 ## Programs
