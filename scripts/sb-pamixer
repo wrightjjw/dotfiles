@@ -6,7 +6,7 @@ MUTE=$(pamixer --get-mute)
 VOL=$(pamixer --get-volume)
 
 if [ $MUTE = 'true' ]; then
-	ICON=🔈
+	ICON=🔇
 elif [ $VOL -lt 34 ]; then
 	ICON=🔉
 elif [ $VOL -lt 67 ]; then
