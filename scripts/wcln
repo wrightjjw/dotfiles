@@ -1,0 +1,16 @@
+#!/bin/sh
+# Script to wc on certain lines of a file using sed
+# Usage: wcln [startLine] [endLine] [file]
+
+print_usage()
+{
+	echo "Usage: wcln [startLine] [endLine] [file]"
+}
+
+if [ $# != 3 ]; then
+	print_usage
+	exit 1
+fi
+
+sed -n "$1,$2p" $3 | wc
+
