@@ -1,0 +1,39 @@
+#!/bin/sh
+# Script to rotate a monitor or rotate it back.
+#
+# Usage: rotate-monitor [DISPLAY]
+
+# rotate direction to pass to `xrandr --rotate`
+dir=left
+
+print_usage()
+{
+	echo "Usage: rotate-monitor [DISPLAY]"
+}
+
+disp=$1
+
+if [ $# != 1 ]
+then
+	print_usage
+	exit 1
+fi
+
+# returns 1 if normal, 2 if $dir
+status=$(xrandr | grep $disp | grep -o $dir | wc -l)
+
+case $status in
+	1)
+		change=$dir
+		;;
+	2)
+		change=normal
+		;;
+	*)
+		>&2 echo "Unknown error"
+		exit 1
+		;;
+esac
+
+xrandr --output $disp --rotate $change
+
