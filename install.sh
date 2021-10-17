@@ -6,6 +6,11 @@ REPO=$(dirname $(readlink -f "$0"))
 mkdir -p ~/.config/alacritty
 ln -s $REPO/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
 
+# emacs
+mkdir -p ~/.emacs.d
+ln -s $REPO/emacs/init.el ~/.config/.emacs.d/init.el
+ln -s $REPO/emacs/packages.el ~/.config/.emacs.d/packagaes.el
+
 # dunst
 mkdir -p ~/.config/dunst
 ln -s $REPO/dunst/dunstrc ~/.config/dunst/dunstrc
