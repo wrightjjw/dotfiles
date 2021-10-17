@@ -8,8 +8,8 @@ ln -s $REPO/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
 
 # emacs
 mkdir -p ~/.emacs.d
-ln -s $REPO/emacs/init.el ~/.config/.emacs.d/init.el
-ln -s $REPO/emacs/packages.el ~/.config/.emacs.d/packagaes.el
+ln -s $REPO/emacs/init.el ~/.emacs.d/init.el
+ln -s $REPO/emacs/package.el ~/.emacs.d/package.el
 
 # dunst
 mkdir -p ~/.config/dunst
