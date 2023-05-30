@@ -43,7 +43,8 @@ alias 'xclip-c'='xclip -selection clipboard'
 eval "$(starship init zsh)"
 
 # Syntax highlighting (must be last)
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh # Arch
+source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh # Fedora
 
 # Colored less (man)
 export LESS_TERMCAP_mb=$'\e[1;32m'
